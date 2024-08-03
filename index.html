@@ -7,60 +7,128 @@
   <title>Chenyue Li</title>
   <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header, .section, .footer {
+      margin-bottom: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .name {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    .header p, .header a {
+      font-size: 1.1em;
+    }
+    .section h2 {
+      font-size: 1.6em;
+      margin-bottom: 10px;
+    }
+    .publication, .honor {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .publication img, .honor img {
+      width: 25%;
+      max-width: 150px;
+      margin-right: 20px;
+    }
+    .publication div, .honor div {
+      flex: 1;
+    }
+    .publication p, .honor p, .publication a, .honor a {
+      font-size: 1.1em;
+    }
+    .footer {
+      text-align: right;
+      font-size: 0.9em;
+    }
+    .footer img {
+      width: 100px;
+      height: auto;
+    }
+    .footer a {
+      color: #555;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <div style="width:100%; max-width:800px; margin:auto;">
-    <div style="display:flex; justify-content:space-between; padding:2.5%;">
-      <div style="flex: 63%; text-align:center;">
+  <div class="container">
+    <div class="header">
+      <div>
         <p class="name">Chenyue Li 李辰玥</p>
-        <p>I'm currently a third-year undergraduate student (Sep. 2021 - Jun. 2025) at the <a href="https://cs.whu.edu.cn/">School of Computer Science</a> at <a href="https://www.whu.edu.cn/">Wuhan University</a>, fortunately supervised by <a href="https://marswhu.github.io/">Prof. Mang Ye</a>.</p>
+        <p>I'm currently a third-year undergraduate student (Sep. 2021 - Jun. 2025) at the <a href="https://cs.whu.edu.cn/">School of Computer Science</a> at <a href="https://www.whu.edu.cn/">Wuhan University</a>, supervised by <a href="https://marswhu.github.io/">Prof. Mang Ye</a>.</p>
         <p>
           <a href="mailto:chenyueli@whu.edu.cn">Email</a> &nbsp;/&nbsp;
           <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp;
           <a href="https://github.com/JigglypuffStitch/">Github</a>
         </p>
       </div>
-      <div style="flex: 37%; text-align:center;">
+      <div>
         <a href="images/photo.jpg">
-          <img src="images/photo.jpg" alt="profile photo" style="width:100%; border-radius:50%; object-fit:cover;">
+          <img src="images/photo.jpg" alt="profile photo">
         </a>
       </div>
     </div>
 
-    <section style="padding:20px;">
+    <div class="section">
       <h2>Publications</h2>
-      <div style="display:flex; padding:20px 0;">
-        <div style="width:25%;">
-          <img src="images/AdaFreq.png" alt="Adaptive High-Frequency Transformer" style="width:100%;">
-        </div>
-        <div style="width:75%; padding-left:20px;">
+      <div class="publication">
+        <img src="images/AdaFreq.png" alt="Adaptive High-Frequency Transformer">
+        <div>
           <a href="https://jigglypuffstitch.github.io/publications/ECCV_2024_Wildlife_Re_ID.pdf">
             <span class="papertitle">Adaptive High-Frequency Transformer for Diverse Wildlife Re-Identification</span>
           </a>
           <p><strong>Chenyue Li</strong><sup>+</sup>, Shuoyi Chen<sup>+</sup>, Mang Ye</p>
           <p><em>ECCV 2024</em></p>
           <p><a href="https://jigglypuffstitch.github.io/publications/ECCV_2024_Wildlife_Re_ID.pdf">pdf</a></p>
-          <p>Proposed a unified, multi-species general high-frequency Transformer architecture to enhance applicability across various species, breaking through the existing species-specific methods, and evaluated the model on diverse wildlife datasets, where it achieved superior performance over state-of-the-art ReID methods.</p>
+          <p>Proposed a unified, multi-species general high-frequency Transformer architecture to enhance applicability across various species, evaluated on diverse wildlife datasets, achieving superior performance over state-of-the-art ReID methods.</p>
         </div>
       </div>
 
-      <div style="display:flex; padding:20px 0;">
-        <div style="width:25%;">
-          <img src="images/survey.png" alt="Transformer for Object Re-Identification: A Survey" style="width:100%;">
-        </div>
-        <div style="width:75%; padding-left:20px;">
+      <div class="publication">
+        <img src="images/survey.png" alt="Transformer for Object Re-Identification: A Survey">
+        <div>
           <a href="https://arxiv.org/pdf/2401.06960">
             <span class="papertitle">Transformer for Object Re-Identification: A Survey</span>
           </a>
           <p>Mang Ye, Shuoyi Chen, <strong>Chenyue Li</strong>, Wei-Shi Zheng, David Crandall, Bo Du</p>
           <p><em>arXiv</em></p>
           <p><a href="https://arxiv.org/pdf/2401.06960">pdf</a></p>
-          <p>We briefly review the development of the Re-ID field before the Transformer era, introduce Transformer in vision, and provide a detailed analysis of its numerous advantages.</p>
+          <p>Reviewed the development of Re-ID before the Transformer era, introduced Transformer in vision, and analyzed its advantages.</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section style="padding:20px;">
+    <div class="section">
       <h2>Scholarships and Honors</h2>
       <ul>
         <li>
@@ -89,13 +157,13 @@
           <span style="float:right;">2022</span>
         </li>
       </ul>
-    </section>
+    </div>
 
-    <div style="padding:20px; text-align:right;">
+    <div class="footer">
       <a href="https://mapmyvisitors.com/web/1bw9g" title="Visit tracker">
-        <img src="https://mapmyvisitors.com/map.png?cl=080808&w=a&t=n&d=v4bWQoRbnwiTFfpon4_YTWafm7EWSiulEFvr5SVRoXI&co=ffffff&ct=808080" alt="Visit tracker" height="100">
+        <img src="https://mapmyvisitors.com/map.png?cl=080808&w=a&t=n&d=v4bWQoRbnwiTFfpon4_YTWafm7EWSiulEFvr5SVRoXI&co=ffffff&ct=808080" alt="Visit tracker">
       </a>
-      <p style="font-size:small;">Gratefully attributed to the source code by <a href="https://github.com/jonbarron/jonbarron_website">Dr. Jon Barron</a>.</p>
+      <p>Gratefully attributed to the source code by <a href="https://github.com/jonbarron/jonbarron_website">Dr. Jon Barron</a>.</p>
     </div>
   </div>
 </body>
