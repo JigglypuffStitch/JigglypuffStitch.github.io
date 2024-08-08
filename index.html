@@ -4,26 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Chenyue Li">
-  <style>
-        .award-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .award-description {
-            flex: 1;
-            margin-right: 10px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .show-more {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
-        }
-  </style>
+  
   <title>Chenyue Li</title>
   <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="stylesheet.css">
@@ -46,6 +27,8 @@
             <a href="data/CV.pdf">CV</a> &nbsp;/&nbsp;
             <a href="https://github.com/JigglypuffStitch/">Github</a>
           </div>
+
+        </p>
       </div>
       <div style="flex: 37%; text-align:center;">
         <a href="images/photo.jpg">
@@ -91,22 +74,19 @@
       </div>
     </section>
 
+
+
     <section style="padding:20px;">
       <h2>Scholarships and Honors</h2>
       <ul>
-         <li class="award-item">
-            <span class="award-description">
-                <strong>National First Prize (Team Leader)</strong> in the Chinese Collegiate Computing Competition (Award Rate: 5% nation-wide)
-            </span>
-            <span class="show-more" onclick="toggleDescription(this)">...more</span>
-            <span style="float: right;">2024</span>
+         <li>
+          <strong>National First Prize(Team Leader)</strong> in the Chinese Collegiate Computing Competition(Award Rate: 5% nation-wide)
+          <span style="float:right;">2024</span>
         </li>
-        <li class="award-item">
-            <span class="award-description">
-                <strong>National Level College Students' innovation and entrepreneurship training program (Team Leader)</strong>
-            </span>
-            <span class="show-more" onclick="toggleDescription(this)">...more</span>
-            <span style="float: right;">2024</span>
+        <li>&nbsp;</li>
+        <li>
+          <strong>National Level College Students' innovation and entrepreneurship training program(Team Leader)</strong>
+          <span style="float:right;">2024</span>
         </li>
         <li>
           <strong>First Class Scholarship of Wuhan University</strong> (Award Rate: <strong>5%</strong> school-wide)
@@ -138,22 +118,8 @@
       <p style="font-size:small;">Gratefully attributed to the source code by <a href="https://github.com/jonbarron/jonbarron_website">Dr. Jon Barron</a>.</p>
     </div>
   </div>
-
-  <script>
-    function toggleDescription(element) {
-        const description = element.previousElementSibling;
-        if (description.style.whiteSpace === 'nowrap') {
-            description.style.whiteSpace = 'normal';
-            element.textContent = '...less';
-        } else {
-            description.style.whiteSpace = 'nowrap';
-            element.textContent = '...more';
-        }
-    }
-  </script>
 </body>
 </html>
-
 
 
 
