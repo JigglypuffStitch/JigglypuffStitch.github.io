@@ -86,7 +86,7 @@ figcaption { color: var(--muted); font-size: 12px; letter-spacing: .02em; margin
 .awards { grid-column: 2; margin: 0; list-style: none; padding: 0; font-size: 14px; }
 .awards li { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; margin-bottom: 14px; }
 .awards li:last-child { margin: 0; }
-.awards .date { color: var(--muted); font-size: 13px; }
+.awards .date { color: var(--muted); font-size: 13px; white-space: nowrap; flex-shrink: 0; }
 .award-detail { color: var(--muted); }
 footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 28px 0 34px; color: var(--muted); font-size: 12px; }
 footer p { margin: 0; }
