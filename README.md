@@ -17,10 +17,12 @@ Each paper has a figure preview on the left and its complete description on the 
 Click a figure to enlarge it, press Escape or Close to dismiss it, or open it in a new tab.
 The mobile layout places figures above the corresponding text.
 
-The publication switch defaults to Selected. Mark featured articles with `data-selected`;
+The publication switch defaults to Selected. Set numeric `data-selected` ranks on featured articles to control their Selected order;
 All shows all eight articles: the five featured papers plus PlotGround, MemAdapter,
 and Implicit Graph, Explicit Retrieval, confirmed from the author’s supplied Scholar screenshot. Buttons support keyboard activation,
-expose the active choice, and announce the visible count. With JavaScript disabled,
+expose the active choice, and announce the visible count. All follows the HTML order,
+from newest to oldest, with the undated Reasoning manuscript placed immediately after
+the 2025 Transformer survey as requested. Selected keeps its original curated order. With JavaScript disabled,
 all entries remain readable and the switch stays hidden.
 
 ## Figure sources

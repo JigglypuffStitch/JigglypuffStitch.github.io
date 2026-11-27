@@ -4,14 +4,19 @@
   if (!controls) return;
 
   const buttons = [...controls.querySelectorAll('[data-publication-filter]')];
+  // HTML order is the All view; numeric ranks preserve the curated Selected view.
   const papers = [...publications.querySelectorAll('article.paper')];
+  const selectedOrder = [...papers].sort((a, b) =>
+    Number(a.dataset.selected || Infinity) - Number(b.dataset.selected || Infinity));
   const heading = publications.querySelector('#publications-heading');
   const status = publications.querySelector('#publication-status');
 
   function selectPublications(filter, announce = true) {
     const all = filter === 'all';
     let count = 0;
-    papers.forEach(paper => {
+    const orderedPapers = all ? papers : selectedOrder;
+    orderedPapers.forEach(paper => {
+      publications.append(paper);
       paper.hidden = !all && !paper.hasAttribute('data-selected');
       if (!paper.hidden) count += 1;
     });
