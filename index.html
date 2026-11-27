@@ -12,8 +12,8 @@
   <meta property="og:description" content="AI agents and their real-world applications, with a particular interest in AI for Biology.">
   <meta property="og:url" content="https://jigglypuffstitch.github.io/">
   <link rel="canonical" href="https://jigglypuffstitch.github.io/">
-  <link rel="stylesheet" href="stylesheet.css?v=5">
-  <script src="site.js?v=3" defer></script>
+  <link rel="stylesheet" href="stylesheet.css?v=6">
+  <script src="site.js?v=4" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#about">Skip to content</a>
@@ -41,10 +41,15 @@
       </div>
       </section>
       <section id="publications" aria-labelledby="publications-heading">
-        <div class="section-heading">
+        <div class="section-heading publication-heading">
           <h2 id="publications-heading">Publications</h2>
+          <div class="publication-switch" role="group" aria-label="Publication selection" hidden>
+            <button type="button" data-publication-filter="selected" aria-pressed="true">Selected</button>
+            <button type="button" data-publication-filter="all" aria-pressed="false">All</button>
+          </div>
         </div>
-        <article class="paper" id="biothread">
+        <p class="sr-only" id="publication-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <article class="paper" id="biothread" data-selected>
           <figure class="paper-figure">
             <a class="figure-link" href="images/biothread-figure.png" data-figure data-title="BioThread" aria-label="Enlarge BioThread figure">
               <img src="images/biothread-figure.png" alt="BioThread Figure 1: the Direct and Stepwise tasks, from panel localization and observation extraction to cross-figure integration and conclusion generation." width="600" height="400" loading="lazy" decoding="async">
@@ -60,7 +65,7 @@
             <p class="paper-summary">We introduce BioThread to evaluate whether vision-language models can interpret biomedical experimental figures, integrate evidence across experiments, and draw scientifically supported conclusions. We further develop an evidence-grounded agent to improve scientific reasoning, with the broader goal of enabling AI agents to support biological research.</p>
           </div>
 
-        </article><article class="paper" id="screenhaystack">
+        </article><article class="paper" id="screenhaystack" data-selected>
           <figure class="paper-figure">
             <a class="figure-link" href="images/screenhaystack-figure2.png" data-figure data-title="ScreenHaystack" aria-label="Enlarge ScreenHaystack figure">
               <img src="images/screenhaystack-figure2.png" alt="ScreenHaystack Figure 2: spatial blind-zone evaluation and targeted data augmentation." width="600" height="400" loading="lazy" decoding="async">
@@ -77,7 +82,7 @@
             <p class="paper-links"><a href="https://aclanthology.org/2026.emnlp-main.904/"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>Paper</span></a><a href="https://arxiv.org/abs/2609.32036"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>arXiv</span></a></p>
           </div>
 
-        </article><article class="paper" id="reasoning">
+        </article><article class="paper" id="reasoning" data-selected>
           <figure class="paper-figure">
             <a class="figure-link" href="images/reasoning-overview.png" data-figure data-title="Reasoning and decision stability" aria-label="Enlarge Reasoning and decision stability figure">
               <img src="images/reasoning-overview.png" alt="Experimental workflow from the reasoning and decision stability study." width="600" height="400" loading="lazy" decoding="async">
@@ -93,7 +98,55 @@
             <p class="paper-summary">We investigate the role of reasoning in improving the stability of LLM decision-making across ethical and professional domains. Our findings demonstrate that reasoning can improve decision consistency independently of accuracy gains.</p>
           </div>
 
-        </article><article class="paper" id="survey">
+        </article><article class="paper" id="plotground">
+          <figure class="paper-figure">
+            <a class="figure-link" href="images/plotground-overview.png" data-figure data-title="PlotGround" aria-label="Enlarge PlotGround figure">
+              <img src="images/plotground-overview.png" alt="PlotGround pipeline for mapping scientific figures to source tables, grounding their panels, and synthesizing quantitative questions." width="600" height="400" loading="lazy" decoding="async">
+              <span class="figure-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg><span>View figure</span></span>
+            </a>
+            <figcaption>Scientific figure understanding</figcaption>
+          </figure>
+          <div class="paper-content">
+            <p class="venue">arXiv, 2026</p>
+            <h3><a href="https://arxiv.org/abs/2610.06825">PlotGround: Grounding Plot Digitization in Real Scientific Figures and Their Source Data</a></h3>
+            <p class="authors">Yaohui Zhang, Binxu Li, Haoyi Duan, Jiacheng Miao, Yixin Wang, Xinran Du, <strong>Chenyue Li</strong>, Shilong Liu, Kevin Wu, James Zou</p>
+            <p class="paper-summary">We introduce a benchmark construction pipeline that links real scientific figures to their source data, enabling verifiable evaluation of plot digitization. The resulting benchmark tests how accurately multimodal models recover numerical values from published figures.</p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2610.06825"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>arXiv</span></a></p>
+          </div>
+        </article>
+        <article class="paper" id="memadapter">
+          <figure class="paper-figure">
+            <a class="figure-link" href="images/memadapter-overview.png" data-figure data-title="MemAdapter" aria-label="Enlarge MemAdapter figure">
+              <img src="images/memadapter-overview.png" alt="MemAdapter architecture showing generative subgraph retrieval, cross-paradigm alignment, and memory fusion." width="600" height="400" loading="lazy" decoding="async">
+              <span class="figure-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg><span>View figure</span></span>
+            </a>
+            <figcaption>Agent memory alignment</figcaption>
+          </figure>
+          <div class="paper-content">
+            <p class="venue">arXiv, 2026</p>
+            <h3><a href="https://arxiv.org/abs/2602.08369">MemAdapter: Fast Alignment across Agent Memory Paradigms via Generative Subgraph Retrieval</a></h3>
+            <p class="authors">Xin Zhang, Kailai Yang, <strong>Chenyue Li</strong>, Hao Li, Qiyu Wei, Jun’ichi Tsujii, Sophia Ananiadou</p>
+            <p class="paper-summary">We develop a shared retrieval framework for explicit, parametric, and latent agent memories. A generative subgraph retriever and lightweight alignment modules enable efficient adaptation to new memory paradigms and fusion of complementary evidence.</p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2602.08369"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>arXiv</span></a></p>
+          </div>
+        </article>
+        <article class="paper" id="latentgraphmem">
+          <figure class="paper-figure">
+            <a class="figure-link" href="images/latentgraphmem-overview.png" data-figure data-title="LatentGraphMem" aria-label="Enlarge LatentGraphMem figure">
+              <img src="images/latentgraphmem-overview.png" alt="LatentGraphMem workflow from implicit graph construction to explicit subgraph retrieval and reasoning." width="600" height="400" loading="lazy" decoding="async">
+              <span class="figure-zoom"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg><span>View figure</span></span>
+            </a>
+            <figcaption>Long-horizon agent memory</figcaption>
+          </figure>
+          <div class="paper-content">
+            <p class="venue">arXiv, 2026</p>
+            <h3><a href="https://arxiv.org/abs/2601.03417">Implicit Graph, Explicit Retrieval: Towards Efficient and Interpretable Long-horizon Memory for Large Language Models</a></h3>
+            <p class="authors">Xin Zhang, Kailai Yang, Hao Li, <strong>Chenyue Li</strong>, Qiyu Wei, Sophia Ananiadou</p>
+            <p class="paper-summary">We introduce LatentGraphMem, which stores graph-structured memory in latent space and retrieves compact, explicit evidence subgraphs for reasoning. This combines efficient long-context memory with inspectable evidence for question answering.</p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2601.03417"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>arXiv</span></a></p>
+          </div>
+        </article>
+        <article class="paper" id="survey" data-selected>
           <figure class="paper-figure">
             <a class="figure-link" href="images/survey.png" data-figure data-title="Transformer for Object Re-Identification" aria-label="Enlarge Transformer for Object Re-Identification figure">
               <img src="images/survey.png" alt="Overview of Transformer-based person, vehicle, and animal re-identification." width="600" height="400" loading="lazy" decoding="async">
@@ -110,7 +163,7 @@
             <p class="paper-links"><a href="https://doi.org/10.1007/s11263-024-02284-4"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>Paper</span></a><a href="https://github.com/mangye16/ReID-Survey"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.09c-3.12.68-3.78-1.33-3.78-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.94.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.54 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.74 10.74 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3.01 0 4.3-2.62 5.25-5.12 5.53.4.35.76 1.03.76 2.08v3.08c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg><span>Code</span></a></p>
           </div>
 
-        </article><article class="paper" id="adafreq">
+        </article><article class="paper" id="adafreq" data-selected>
           <figure class="paper-figure">
             <a class="figure-link" href="images/AdaFreq.png" data-figure data-title="AdaFreq" aria-label="Enlarge AdaFreq figure">
               <img src="images/AdaFreq.png" alt="AdaFreq architecture with frequency-domain augmentation and object-aware dynamic selection." width="600" height="400" loading="lazy" decoding="async">
