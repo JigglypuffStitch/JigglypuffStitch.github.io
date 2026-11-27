@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+<title id="title">SHAPE conceptual overview</title><desc id="desc">Psychological assessments and conversation history inform a patient profile and response planning, supporting personalized patient dialogue.</desc>
+<rect width="960" height="600" rx="20" fill="#f7f9fc"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect x="48" y="64" width="280" height="192" rx="16" fill="#fff" stroke="#d7e2ee" stroke-width="2"/>
+<rect x="74" y="90" width="44" height="50" rx="6" fill="#e6eef8"/>
+<path d="M85 103h22m-22 10h22m-22 10h13" stroke="#4f77a8" stroke-width="4" stroke-linecap="round"/>
+<text x="74" y="180" font-size="24" font-weight="600" fill="#243a55">Psychological</text><text x="74" y="211" font-size="24" font-weight="600" fill="#243a55">assessments</text>
+<rect x="48" y="294" width="280" height="226" rx="16" fill="#fff" stroke="#d7e2ee" stroke-width="2"/>
+<path d="M79 322h49v34H99l-13 10v-10h-7z" fill="#e0efeb" stroke="#63988b" stroke-width="2"/>
+<path d="M90 333h26m-26 10h18" stroke="#63988b" stroke-width="3" stroke-linecap="round"/>
+<text x="74" y="408" font-size="24" font-weight="600" fill="#243a55">Conversation</text><text x="74" y="439" font-size="24" font-weight="600" fill="#243a55">history</text>
+<path d="M328 160h38v134h42m-80 113h38V294" fill="none" stroke="#9bb0c9" stroke-width="3"/>
+<circle cx="366" cy="294" r="6" fill="#7893b4"/>
+<rect x="408" y="186" width="192" height="216" rx="18" fill="#e8eff8" stroke="#c3d4e7" stroke-width="2"/>
+<circle cx="504" cy="236" r="18" fill="#7998bf"/>
+<path d="M471 284c0-33 66-33 66 0" fill="#7998bf"/>
+<text x="504" y="329" text-anchor="middle" font-size="24" font-weight="600" fill="#243a55">Patient</text><text x="504" y="361" text-anchor="middle" font-size="24" font-weight="600" fill="#243a55">profile</text>
+<path d="M600 294h50" stroke="#9bb0c9" stroke-width="3"/>
+<rect x="650" y="186" width="260" height="216" rx="18" fill="#fff" stroke="#d7e2ee" stroke-width="2"/>
+<path d="M681 224h45v30h-27l-11 9v-9h-7z" fill="#e0efeb"/>
+<path d="M844 240h37v26h-8v8l-10-8h-19z" fill="#e8eff8"/>
+<path d="M742 243h82" stroke="#b1c3d6" stroke-width="2" stroke-dasharray="4 5"/>
+<text x="780" y="319" text-anchor="middle" font-size="24" font-weight="600" fill="#243a55">Personalized</text><text x="780" y="351" text-anchor="middle" font-size="24" font-weight="600" fill="#243a55">patient dialogue</text>
+<text x="780" y="465" text-anchor="middle" font-size="20" fill="#718198">Plan · Generate</text>
+</g>
+</svg>
