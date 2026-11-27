@@ -22,31 +22,21 @@
         <h1>Chenyue Li</h1>
         <p class="position">Master's Student in Electrical Engineering</p>
         <p class="affiliation">Stanford University</p>
-        <p class="email">Email: <a href="mailto:chenyuel@stanford.edu">chenyuel@stanford.edu</a></p>
-        <div class="social-links" aria-label="Professional profiles">
-          <a href="https://scholar.google.com/citations?user=nz-0OFIAAAAJ&amp;hl=en">Google Scholar</a>
-          <span aria-hidden="true">/</span>
-          <a href="https://www.linkedin.com/in/chenyue-li-99a024385">LinkedIn</a>
-          <span aria-hidden="true">/</span>
-          <a href="https://github.com/JigglypuffStitch">GitHub</a>
-        </div>
+        <nav class="social-links" aria-label="Contact and profiles">
+          <a href="https://scholar.google.com/citations?user=nz-0OFIAAAAJ&amp;hl=en"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v6c3 2 9 2 12 0v-6M2 9v7"/></svg><span>Google Scholar</span></a>
+          <a href="https://github.com/JigglypuffStitch"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.09c-3.12.68-3.78-1.33-3.78-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.94.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.54 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.74 10.74 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3.01 0 4.3-2.62 5.25-5.12 5.53.4.35.76 1.03.76 2.08v3.08c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg><span>GitHub</span></a>
+          <a href="https://www.linkedin.com/in/chenyue-li-99a024385"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7m4 0v-7m0 3c0-4 6-4 6 0v4"/><circle cx="7" cy="7" r=".7" fill="currentColor" stroke="none"/></svg><span>LinkedIn</span></a>
+        </nav>
+        <p class="email"><a href="mailto:chenyuel@stanford.edu"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>chenyuel@stanford.edu</span></a></p>
       </div>
       <!-- Portrait intentionally left empty. Replace this div with an img using class="portrait" when ready. -->
       <div class="portrait portrait-placeholder" aria-hidden="true"></div>
     </header>
 
-    <nav class="section-nav" aria-label="Page sections">
-      <a href="#about">About</a>
-      <a href="#publications">Publications</a>
-      <a href="#in-preparation">In Preparation</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#awards">Awards</a>
-    </nav>
 
     <main>
       <section id="about" aria-labelledby="about-heading">
-        <h2 id="about-heading">About Me</h2>
+        <h2 id="about-heading" class="visually-hidden">About Me</h2>
         <p>Hi! I am a master's student in Electrical Engineering at Stanford University, where I work with Prof. <a href="https://profiles.stanford.edu/serena-yeung">Serena Yeung-Levy</a> at the <a href="https://marvl.stanford.edu/">MARVL Lab</a> and Prof. <a href="https://web.stanford.edu/~eadeli/">Ehsan Adeli</a> at the <a href="https://stai.stanford.edu/">STAI Lab</a>.</p>
         <p>Previously, I was a research intern at Microsoft Research Asia (MSRA), working with Dr. Fangzhao Wu on LLM reasoning and reinforcement learning. I received my bachelor's degree in Computer Science and Technology from Wuhan University.</p>
         <p>My research interests lie in <strong>AI agents and their real-world applications, with a particular interest in AI for Biology (AI4Bio)</strong>. I am interested in developing AI agents that can understand complex scientific information, reason over experimental evidence, and contribute to biological research and scientific discovery.</p>
@@ -57,9 +47,10 @@
           <h2 id="publications-heading">Publications</h2>
           <p class="section-note">* indicates equal contribution.</p>
         </div>
+        <h3 class="publication-group">AI Agents &amp; Scientific Reasoning</h3>
         <article class="paper">
           <div class="paper-content">
-            <h3>BioThread: Tracing Claim–Evidence Reasoning in Biomedical Scientific Figures</h3>
+            <h4>BioThread: Tracing Claim–Evidence Reasoning in Biomedical Scientific Figures</h4>
             <p class="authors"><strong>Chenyue Li</strong>, Xiaoxiao Sun, Huangqingbo Sun, Yuwei Yang, Elaine Sui, Qinlin Zhao, Emma Lundberg, Serena Yeung-Levy</p>
             <p class="venue submitted">Submitted to CVPR 2027</p>
             <p class="paper-summary">We introduce BioThread to evaluate whether vision-language models can interpret biomedical experimental figures, integrate evidence across experiments, and draw scientifically supported conclusions. We further develop an evidence-grounded agent to improve scientific reasoning, with the broader goal of enabling AI agents to support biological research.</p>
@@ -67,43 +58,38 @@
         </article>
         <article class="paper">
           <div class="paper-content">
-            <h3><a href="https://aclanthology.org/2026.emnlp-main.904/">ScreenHaystack: Finding Blind Zones in GUI Grounding</a></h3>
+            <h4><a href="https://aclanthology.org/2026.emnlp-main.904/">ScreenHaystack: Finding Blind Zones in GUI Grounding</a></h4>
             <p class="authors"><strong>Chenyue Li</strong>, Xiaoxiao Sun, Yubo Deng, Qinlin Zhao, Serena Yeung-Levy, Yuhui Zhang</p>
             <p class="venue"><strong>EMNLP 2026</strong>, Main Conference</p>
-            <p class="paper-links"><a href="https://aclanthology.org/2026.emnlp-main.904/">Paper</a><span aria-hidden="true">/</span><a href="https://arxiv.org/abs/2609.32036">arXiv</a></p>
             <p class="paper-summary">We introduce a dynamic benchmark to investigate the spatial reliability of GUI grounding models. We identify systematic spatial blind zones in existing models and propose a targeted data augmentation strategy to improve grounding performance.</p>
+            <p class="paper-links"><a href="https://aclanthology.org/2026.emnlp-main.904/"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>Paper</span></a><a href="https://arxiv.org/abs/2609.32036"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>arXiv</span></a></p>
           </div>
         </article>
         <article class="paper">
           <div class="paper-content">
-            <h3>Reasoning Improves LLMs’ Stability in Decision Making</h3>
+            <h4>Reasoning Improves LLMs’ Stability in Decision Making</h4>
             <p class="authors">Dacheng Wen*, <strong>Chenyue Li*</strong>, Chenglong Wang, Xiaoyuan Yi, Jing Yao, Mingxiao An, Bin Zhu, Wei Chen, Lingjuan Lyu, Junming Huang, Xing Xie, Bu Zhong, Francis C. M. Lau, Yupeng Li, Fangzhao Wu</p>
             <p class="venue submitted">Submitted to Nature Communications</p>
             <p class="paper-summary">We investigate the role of reasoning in improving the stability of LLM decision-making across ethical and professional domains. Our findings demonstrate that reasoning can improve decision consistency independently of accuracy gains.</p>
           </div>
         </article>
-        <article class="paper paper-with-image">
-          <a class="paper-image" href="https://doi.org/10.1007/s11263-024-02284-4" aria-label="Read Transformer for Object Re-Identification: A Survey">
-            <img src="images/survey.png" alt="Overview figure from the Transformer-based object re-identification survey" width="1258" height="462" loading="lazy" decoding="async">
-          </a>
+        <h3 class="publication-group">Visual Representation Learning</h3>
+        <article class="paper">
           <div class="paper-content">
-            <h3><a href="https://doi.org/10.1007/s11263-024-02284-4">Transformer for Object Re-Identification: A Survey</a></h3>
+            <h4><a href="https://doi.org/10.1007/s11263-024-02284-4">Transformer for Object Re-Identification: A Survey</a></h4>
             <p class="authors">Mang Ye, Shuoyi Chen, <strong>Chenyue Li</strong>, Wei-Shi Zheng, David Crandall, Bo Du</p>
             <p class="venue"><strong>International Journal of Computer Vision (IJCV), 2025</strong></p>
-            <p class="paper-links"><a href="https://doi.org/10.1007/s11263-024-02284-4">Paper</a><span aria-hidden="true">/</span><a href="https://github.com/mangye16/ReID-Survey">Code</a></p>
             <p class="paper-summary">We provide a comprehensive review of Transformer-based object re-identification across different modalities and learning settings, establish new experimental benchmarks, and discuss open challenges in the foundation model era.</p>
+            <p class="paper-links"><a href="https://doi.org/10.1007/s11263-024-02284-4"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>Paper</span></a><a href="https://github.com/mangye16/ReID-Survey"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.09c-3.12.68-3.78-1.33-3.78-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.94.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.54 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.74 10.74 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3.01 0 4.3-2.62 5.25-5.12 5.53.4.35.76 1.03.76 2.08v3.08c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg><span>Code</span></a></p>
           </div>
         </article>
-        <article class="paper paper-with-image">
-          <a class="paper-image" href="https://arxiv.org/abs/2410.06977" aria-label="Read Adaptive High-Frequency Transformer for Diverse Wildlife Re-Identification">
-            <img src="images/AdaFreq.png" alt="Overview figure of the adaptive high-frequency Transformer for wildlife re-identification" width="1301" height="650" loading="lazy" decoding="async">
-          </a>
+        <article class="paper">
           <div class="paper-content">
-            <h3><a href="https://arxiv.org/abs/2410.06977">Adaptive High-Frequency Transformer for Diverse Wildlife Re-Identification</a></h3>
+            <h4><a href="https://arxiv.org/abs/2410.06977">Adaptive High-Frequency Transformer for Diverse Wildlife Re-Identification</a></h4>
             <p class="authors"><strong>Chenyue Li</strong>, Shuoyi Chen, Mang Ye</p>
             <p class="venue"><strong>ECCV 2024</strong></p>
-            <p class="paper-links"><a href="https://arxiv.org/abs/2410.06977">Paper</a><span aria-hidden="true">/</span><a href="https://github.com/JigglypuffStitch/AdaFreq">Code</a></p>
             <p class="paper-summary">We propose an adaptive high-frequency Transformer for wildlife re-identification, leveraging discriminative visual features to recognize individual animals across diverse species.</p>
+            <p class="paper-links"><a href="https://arxiv.org/abs/2410.06977"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 2h9l5 5v15H5V2Z"/><path d="M14 2v6h5M8 12h8M8 16h8M8 19h5"/></svg><span>Paper</span></a><a href="https://github.com/JigglypuffStitch/AdaFreq"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" stroke="none" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.09c-3.12.68-3.78-1.33-3.78-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.94.1-.73.39-1.22.71-1.5-2.49-.28-5.11-1.25-5.11-5.54 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15a10.74 10.74 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3.01 0 4.3-2.62 5.25-5.12 5.53.4.35.76 1.03.76 2.08v3.08c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg><span>Code</span></a></p>
           </div>
         </article>
       </section>
