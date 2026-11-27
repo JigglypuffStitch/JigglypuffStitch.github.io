@@ -3,27 +3,36 @@
 A responsive, build-free academic homepage for GitHub Pages.
 
 - `index.html`: biography, publications, projects, education, experience, and awards.
-- `stylesheet.css`: page layout and responsive styles.
-- `images/`: existing research figures and other original assets.
+- `stylesheet.css`: responsive layout, typography, and figure viewer styles.
+- `site.js`: accessible image enlargement; image links also work without JavaScript.
+- `images/`: publication figures and the SHAPE conceptual overview.
 
-The profile photo is intentionally blank. To add a photo, replace the
+The profile photo is intentionally blank. To add a photo, replace the hidden
 `portrait-placeholder` div in `index.html` with:
 
 ```html
-<img class="portrait" src="images/photo.jpg" alt="Chenyue Li" width="148" height="148">
+<img class="portrait" src="images/photo.jpg" alt="Chenyue Li" width="160" height="160">
 ```
 
-The current publication text and submission statuses follow the supplied homepage draft.
-Publications are grouped by research area and use consistent text-first entries.
-Keep each publication's links inside its `paper-links` paragraph.
-The design uses local serif fonts and inline SVG icons, with no external font or icon dependencies.
+The publication text, authors, and submission statuses follow the supplied homepage draft.
+Each paper has a figure preview on the left and its complete description on the right.
+Click a figure to enlarge it, press Escape or Close to dismiss it, or open it in a new tab.
+The mobile layout places figures above the corresponding text.
 
-GitHub Pages can serve these files directly from the repository's `master` branch
-and root folder; no dependencies or build step are required.
+## Figure sources
 
-## Acknowledgments
+- **BioThread:** Figure 1 from the author's supplied manuscript. The thumbnail shows its experimental figure panels; the viewer shows the full overview.
+- **ScreenHaystack:** Figure 1 from the [public paper](https://aclanthology.org/2026.emnlp-main.904/).
+- **Reasoning and decision stability:** Figure 1a (preview) and Figure 1 (full view) from the author's supplied manuscript, `Reasoning_improves_stability__Nature_.pdf`.
+- **Re-ID survey and AdaFreq:** original research figures already in this repository.
+- **SHAPE:** an original conceptual overview based on the supplied project description. This is a schematic, not an experimental result or a reproduced manuscript figure.
 
-The earlier version of this repository used [Jon Barron's academic website](https://github.com/jonbarron/jonbarron_website)
-as its starting point. The updated HTML and CSS retain a simple academic-homepage layout.
+GitHub Pages serves the repository's `master` branch and root folder directly.
+There are no dependencies, external fonts, analytics, or build steps.
 
-The current visual design takes inspiration from [Qinlin Zhao's homepage](https://icecream-and-tea.github.io/): serif typography, muted blue accents, and compact publication groups.
+## Design references
+
+The layout draws on the clear hierarchy and figure-led research lists of
+[Cheng Chi](https://cheng-chi.github.io/) and the concise presentation of
+[Shunyu Yao](https://ysymyth.github.io/), using an original implementation.
+The earlier repository was based on [Jon Barron's academic website](https://github.com/jonbarron/jonbarron_website).
