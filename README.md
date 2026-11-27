@@ -7,12 +7,8 @@ A responsive, build-free academic homepage for GitHub Pages.
 - `site.js`: accessible image enlargement; image links also work without JavaScript.
 - `images/`: publication figures and original image assets.
 
-The profile photo is intentionally blank. To add a photo, replace the hidden
-`portrait-placeholder` div in `index.html` with:
-
-```html
-<img class="portrait" src="images/photo.jpg" alt="Chenyue Li" width="160" height="160">
-```
+The profile portrait is the author's supplied `IMG_7893.jpg`, stored unchanged as
+`images/chenyue-li.jpg` and displayed at 160 × 160 pixels.
 
 The publication text, authors, and submission statuses follow the supplied homepage draft.
 Each paper has a figure preview on the left and its complete description on the right.
