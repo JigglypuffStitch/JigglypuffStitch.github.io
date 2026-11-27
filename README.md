@@ -21,9 +21,9 @@ The mobile layout places figures above the corresponding text.
 
 ## Figure sources
 
-- **BioThread:** Figure 1 from the author's supplied manuscript. The thumbnail shows its experimental figure panels; the viewer shows the full overview.
-- **ScreenHaystack:** Figure 1 from the [public paper](https://aclanthology.org/2026.emnlp-main.904/).
-- **Reasoning and decision stability:** Figure 1a (preview) and Figure 1 (full view) from the author's supplied manuscript, `Reasoning_improves_stability__Nature_.pdf`.
+- **BioThread:** Figure 2 (dataset construction) from the author's supplied BioThread manuscript. The thumbnail and enlarged view show the same complete figure.
+- **ScreenHaystack:** Figure 2 from the [public paper](https://aclanthology.org/2026.emnlp-main.904/).
+- **Reasoning and decision stability:** The exact overview image supplied by the author, used for both preview and enlarged view. Equal-contribution markers are omitted as requested.
 - **Re-ID survey and AdaFreq:** original research figures already in this repository.
 - **SHAPE:** an original conceptual overview based on the supplied project description. This is a schematic, not an experimental result or a reproduced manuscript figure.
 
