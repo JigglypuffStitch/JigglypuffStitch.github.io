@@ -5,7 +5,7 @@ A responsive, build-free academic homepage for GitHub Pages.
 - `index.html`: biography, publications, projects, education, experience, and awards.
 - `stylesheet.css`: responsive layout, typography, and figure viewer styles.
 - `site.js`: accessible image enlargement; image links also work without JavaScript.
-- `images/`: publication figures and the SHAPE conceptual overview.
+- `images/`: publication figures and original image assets.
 
 The profile photo is intentionally blank. To add a photo, replace the hidden
 `portrait-placeholder` div in `index.html` with:
@@ -25,7 +25,7 @@ The mobile layout places figures above the corresponding text.
 - **ScreenHaystack:** Figure 2 from the [public paper](https://aclanthology.org/2026.emnlp-main.904/).
 - **Reasoning and decision stability:** The exact overview image supplied by the author, used for both preview and enlarged view. Equal-contribution markers are omitted as requested.
 - **Re-ID survey and AdaFreq:** original research figures already in this repository.
-- **SHAPE:** an original conceptual overview based on the supplied project description. This is a schematic, not an experimental result or a reproduced manuscript figure.
+- **SHAPE:** displayed as text only; no figure is shown.
 
 GitHub Pages serves the repository's `master` branch and root folder directly.
 There are no dependencies, external fonts, analytics, or build steps.

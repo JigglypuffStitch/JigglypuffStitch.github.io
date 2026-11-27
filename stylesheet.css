@@ -66,6 +66,7 @@ figcaption { color: var(--muted); font-size: 12px; letter-spacing: .02em; margin
 .paper-links a:hover { text-decoration: none; background: #f0f5fb; border-color: #adc3de; }
 .paper-links .link-icon { width: 13px; height: 13px; }
 #in-preparation { margin-top: 15px; }
+.paper.project { grid-template-columns: minmax(0, 1fr); }
 .project .project-affiliation { margin: 0 0 4px; color: var(--muted); font-size: 14px; }
 .project .collaborator { margin: 0 0 11px; font-size: 14px; }
 .project .paper-content>p:last-child { font-size: 16px; line-height: 1.72; margin-bottom: 0; }
