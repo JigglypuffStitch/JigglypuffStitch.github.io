@@ -8,7 +8,9 @@ A responsive, build-free academic homepage for GitHub Pages.
 - `images/`: publication figures and original image assets.
 
 The profile portrait is the author's supplied `IMG_7893.jpg`, stored unchanged as
-`images/chenyue-li.jpg` and displayed at 160 × 160 pixels.
+`images/chenyue-li.jpg`. The introduction follows a compact profile header: name and
+contact links on the left, a circular portrait on the right, and the biography below.
+The portrait is 176 × 176 pixels on desktop and adapts to smaller screens.
 
 The publication text, authors, and submission statuses follow the supplied homepage draft.
 Each paper has a figure preview on the left and its complete description on the right.
@@ -17,7 +19,7 @@ The mobile layout places figures above the corresponding text.
 
 ## Figure sources
 
-- **BioThread:** Figure 2 (dataset construction) from the author's supplied BioThread manuscript. The thumbnail and enlarged view show the same complete figure.
+- **BioThread:** Figure 1 (Direct and Stepwise task definition) from the author's supplied BioThread manuscript. The thumbnail and enlarged view show the same complete figure.
 - **ScreenHaystack:** Figure 2 from the [public paper](https://aclanthology.org/2026.emnlp-main.904/).
 - **Reasoning and decision stability:** The exact overview image supplied by the author, used for both preview and enlarged view. Equal-contribution markers are omitted as requested.
 - **Re-ID survey and AdaFreq:** original research figures already in this repository.
@@ -28,7 +30,8 @@ There are no dependencies, external fonts, analytics, or build steps.
 
 ## Design references
 
-The layout draws on the clear hierarchy and figure-led research lists of
+The profile header is inspired by [Qinlin Zhao](https://icecream-and-tea.github.io/).
+The research list draws on the clear hierarchy and figure-led research lists of
 [Cheng Chi](https://cheng-chi.github.io/) and the concise presentation of
 [Shunyu Yao](https://ysymyth.github.io/), using an original implementation.
 The earlier repository was based on [Jon Barron's academic website](https://github.com/jonbarron/jonbarron_website).
