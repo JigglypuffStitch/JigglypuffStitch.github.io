@@ -77,6 +77,7 @@ figcaption { color: var(--muted); font-size: 12px; letter-spacing: .02em; margin
 .education-list { grid-column: 2; display: grid; gap: 26px; min-width: 0; }
 .education-entry { display: grid; gap: 6px; }
 .education-entry h3 { margin: 0; font-size: 18px; font-weight: 600; line-height: 1.4; letter-spacing: -.2px; }
+.education-degree { margin: 0; color: var(--body); font-size: 15px; line-height: 1.6; }
 .education-period { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; font-variant-numeric: tabular-nums; }
 .education-note { margin-left: 4px; font-size: 13px; }
 .record { grid-column: 2; margin: 0 0 23px; }
