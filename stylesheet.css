@@ -93,6 +93,11 @@ figcaption { color: var(--muted); font-size: 12px; letter-spacing: .02em; margin
 .awards li:last-child { margin: 0; }
 .awards .date { color: var(--muted); font-size: 13px; white-space: nowrap; flex-shrink: 0; }
 .award-detail { color: var(--muted); }
+.visitor-stats { padding: 32px 0 8px; text-align: center; }
+.visitor-stats h2 { margin-bottom: 16px; font-size: 18px; letter-spacing: -.2px; }
+.visitor-map { display: block; width: min(100%, 320px); margin-inline: auto; }
+.visitor-map img { display: block; width: 100%; height: auto; }
+.visitor-details { display: inline-block; margin-top: 12px; font-size: 14px; }
 footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 28px 0 34px; color: var(--muted); font-size: 12px; }
 footer p { margin: 0; }
 footer a { color: var(--muted); }
@@ -163,4 +168,4 @@ body.figure-open { overflow: hidden; }
  .social-links { gap: 9px 17px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *,*::before,*::after { transition: none !important; } }
-@media print { .figure-zoom,.figure-dialog,footer { display: none; } .page { width: 100%; } .intro { padding-top: 0; } .paper { break-inside: avoid; } a { color: inherit; } }
+@media print { .figure-zoom,.figure-dialog,.visitor-stats,footer { display: none; } .page { width: 100%; } .intro { padding-top: 0; } .paper { break-inside: avoid; } a { color: inherit; } }
